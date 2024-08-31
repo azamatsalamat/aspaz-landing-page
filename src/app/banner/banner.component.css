@@ -1,4 +1,42 @@
 :host{
     display: block;
     margin-top: 12vh;
+    background: 
+        linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)),
+        url("/banner.png");
+    background-size: 100% auto;
+    height: 700px;
+    color: white;
+    font-family: 'Roboto';
+}
+
+h1{
+    font-size: 4rem;
+}
+
+h2{
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+a {
+    display: inline-block;
+    font-size: 1.2rem;
+    background-color: #59b958;
+    padding: 20px 40px;
+    border-radius: 40px;
+    max-width: fit-content;
+    text-decoration: none;
+    color: #fff;
+    margin-top: 10px;
+}
+
+section {
+    max-width: 1000px;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
 }
