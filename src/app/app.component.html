@@ -3,6 +3,20 @@
     <app-banner></app-banner>
     <section id="how-it-works">
         <app-section-title title="How It Works?"></app-section-title>
+        <div class="info-section">
+            <app-info-card 
+                [image]="{src: 'online-shopping.png', alt: 'Online shopping icon'}" 
+                title="1. Select your favourite meals from our menu" 
+                text="Thousands of unique recipes! New meals are added every week"></app-info-card>
+            <app-info-card 
+                [image]="{src: 'package.png', alt: 'Delivered package icon'}" 
+                title="2. Receive the delivered meal kit on your selected day" 
+                text="Get the ingredients needed for your favourite meals. Free delivery for orders above 6000 KZT"></app-info-card>
+            <app-info-card 
+                [image]="{src: 'meal.png', alt: 'Cooked meal icon'}" 
+                title="3. Cook a delicious dinner and enjoy!" 
+                text="The meal kit includes a detailed instruction with photos for an easy cooking process"></app-info-card>
+        </div>
     </section>
     <section id="why-us">
         <app-section-title title="Why Us?"></app-section-title>
