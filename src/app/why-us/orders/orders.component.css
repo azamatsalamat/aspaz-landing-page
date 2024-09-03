@@ -1,0 +1,23 @@
+p, span {
+    font-size: 1.2rem;
+}
+
+span {
+    display: block;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.animate {
+    animation: bigAndGreen 1s infinite alternate;
+}
+
+@keyframes bigAndGreen {
+    from {
+        color: initial;
+    }
+    to {
+        transform: scale(1.3);
+        color: green;
+    }
+}
