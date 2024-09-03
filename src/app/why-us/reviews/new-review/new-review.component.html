@@ -1,11 +1,12 @@
+<h3>Want to share your opinion?</h3>
 <form (ngSubmit)="onSubmitReview()">
     <p>
-        <label for="name">Your name:</label>
+        <label for="name">Your name: </label>
         <input id="name" name="name" type="text" [(ngModel)]="enteredName">
     </p>
     <p>
-        <label for="text">Your review:</label>
-        <textarea id="text" name="text" type="text" [(ngModel)]="enteredText"></textarea>
+        <label for="text">Your review: </label>
+        <textarea id="text" name="text" type="text" rows="3" [(ngModel)]="enteredText"></textarea>
     </p>
     <button type="submit">Send</button>
 </form>

@@ -1,0 +1,11 @@
+:host {
+    text-align: left;
+}
+
+p {
+    margin: 0;
+}
+
+p:first-of-type {
+    font-weight: 700;
+}

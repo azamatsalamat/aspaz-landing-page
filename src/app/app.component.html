@@ -50,6 +50,9 @@
             <app-interactive-card title="Reviews">
                 <app-reviews></app-reviews>
             </app-interactive-card>
+            <app-interactive-card title="Your review">
+                <app-new-review (submitReview)="onAddNewReview($event)"></app-new-review>
+            </app-interactive-card>
         </div>
     </section>
 </main>

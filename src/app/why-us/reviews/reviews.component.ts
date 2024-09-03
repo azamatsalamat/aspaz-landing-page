@@ -1,7 +1,7 @@
-import { Component } from '@angular/core';
-import type { Review } from './review.model';
+import { Component, inject } from '@angular/core';
 import { NewReviewComponent } from "./new-review/new-review.component";
 import { ReviewComponent } from "./review/review.component";
+import { ReviewsService } from './reviews.service';
 
 @Component({
   selector: 'app-reviews',
@@ -11,5 +11,8 @@ import { ReviewComponent } from "./review/review.component";
   styleUrl: './reviews.component.css'
 })
 export class ReviewsComponent {
-  reviews: Review[] = [];
+  reviewsService = inject(ReviewsService);
+  get reviews(){
+    return this.reviewsService.reviews;
+  }
 }

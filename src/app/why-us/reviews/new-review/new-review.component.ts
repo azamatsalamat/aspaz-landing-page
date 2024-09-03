@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { Review } from '../review.model';
 
 @Component({
   selector: 'app-new-review',
@@ -9,10 +10,19 @@ import { FormsModule } from '@angular/forms';
   styleUrl: './new-review.component.css'
 })
 export class NewReviewComponent {
+  @Output() submitReview = new EventEmitter<Review>();
+
   enteredName = '';
   enteredText = '';
 
   onSubmitReview(){
-    console.log(this.enteredName);
+    if (this.enteredName && this.enteredText){
+      let review = {
+        id: crypto.randomUUID(),
+        name: this.enteredName,
+        text: this.enteredText
+      }
+      this.submitReview.emit(review);
+    }
   }
 }
