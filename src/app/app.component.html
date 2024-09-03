@@ -3,7 +3,7 @@
     <app-banner></app-banner>
     <section id="how-it-works">
         <app-section-title title="How Does It Work?"></app-section-title>
-        <div class="three-in-row">
+        <div class="cards-row">
             <app-info-card 
                 [image]="{src: 'online-shopping.png', alt: 'Online shopping icon'}" 
                 title="1. Select your favourite meals from our menu" 
@@ -23,7 +23,7 @@
     </section>
     <section id="menu">
         <app-section-title title="Our Menu"></app-section-title>
-        <div class="three-in-row">
+        <div class="cards-row">
             <app-menu-card 
                 [image]="{src: 'french-mustard-chicken.webp', alt: 'French mustard chicken'}" 
                 name="French mustard chicken" 
@@ -43,22 +43,7 @@
     </section>
     <section id="why-us">
         <app-section-title title="Why Us?"></app-section-title>
-        <div class="three-in-row">
-            <app-info-card 
-                [image]="{src: 'calendar.png', alt: 'Calendar icon'}" 
-                title="Order and cancel subscription at any time" 
-                text="">
-            </app-info-card>
-            <app-info-card 
-                [image]="{src: 'chef.png', alt: 'Chef icon'}" 
-                title="Get unique experiences with our exotic meals and programs" 
-                text="">
-            </app-info-card>
-            <app-info-card 
-                [image]="{src: 'like.webp', alt: 'Cooked meal icon'}" 
-                title="People trust us: we have delivered 1025 meals already" 
-                text="">
-            </app-info-card>
+        <div class="cards-row">
         </div>
     </section>
 </main>
