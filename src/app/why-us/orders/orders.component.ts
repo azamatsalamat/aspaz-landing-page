@@ -13,12 +13,18 @@ export class OrdersComponent implements OnInit, OnDestroy {
   orders = 1000;
   
   ngOnInit(): void {
+    const orders = localStorage.getItem('aspaz-orders-count');
+    if (orders){
+      this.orders = JSON.parse(orders);
+    }
+
     this.interval = setInterval(() => {
       const rnd = Math.random();
       let increment = Math.floor(rnd / 0.3);
       this.orders += increment;
 
       if (increment > 0){
+        this.saveCounter();
         this.animateOrdersCount = true;
         setTimeout(() => {
           this.animateOrdersCount = false;
@@ -29,5 +35,9 @@ export class OrdersComponent implements OnInit, OnDestroy {
 
   ngOnDestroy(): void {
     clearTimeout(this.interval);
+  }
+
+  private saveCounter(){
+    localStorage.setItem('aspaz-orders-count', JSON.stringify(this.orders));
   }
 }
