@@ -8,6 +8,11 @@ export class ReviewsService{
             id: crypto.randomUUID(),
             name: "Azamat Salamat",
             text: "Have been ordering from Aspaz for a month. Finally I can cook delicious meals!"
+        },
+        {
+            id: crypto.randomUUID(),
+            name: "Taylor Swift",
+            text: "Found some time for cooking after my latest tour. Aspaz is so convenient!"
         }
     ];
 
