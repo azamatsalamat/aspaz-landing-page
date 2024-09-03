@@ -19,7 +19,7 @@ export class ReviewsService{
     }
 
     add(review: Review){
-        this.reviews.push(review);
+        this.reviews.unshift(review);
         this.saveReviews();
     }
 
