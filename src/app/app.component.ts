@@ -7,11 +7,12 @@ import { InfoCardComponent } from "./shared/info-card/info-card.component";
 import { MenuCardComponent } from './shared/menu-card/menu-card.component';
 import { InteractiveCardComponent } from './shared/interactive-card/interactive-card.component';
 import { OrdersComponent } from "./why-us/orders/orders.component";
+import { ReviewsComponent } from "./why-us/reviews/reviews.component";
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, HeaderComponent, BannerComponent, SectionTitleComponent, InfoCardComponent, MenuCardComponent, InteractiveCardComponent, OrdersComponent],
+  imports: [RouterOutlet, HeaderComponent, BannerComponent, SectionTitleComponent, InfoCardComponent, MenuCardComponent, InteractiveCardComponent, OrdersComponent, ReviewsComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

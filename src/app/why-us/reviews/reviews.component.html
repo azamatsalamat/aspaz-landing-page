@@ -1,0 +1,10 @@
+<h3>What do people think about us?</h3>
+<ul>
+    @for (review of reviews; track review.id) {
+        <li>
+            <app-review [data]="review"></app-review>
+        </li>
+    }
+</ul>
+<h3>Want to share your opinion?</h3>
+<app-new-review></app-new-review>
