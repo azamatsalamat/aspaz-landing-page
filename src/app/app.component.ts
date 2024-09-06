@@ -11,11 +11,12 @@ import { ReviewsComponent } from "./why-us/reviews/reviews.component";
 import { NewReviewComponent } from "./why-us/reviews/new-review/new-review.component";
 import { ReviewsService } from './why-us/reviews/reviews.service';
 import { type Review } from './why-us/reviews/review.model';
+import { FooterComponent } from "./footer/footer.component";
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, HeaderComponent, BannerComponent, SectionTitleComponent, InfoCardComponent, MenuCardComponent, InteractiveCardComponent, OrdersComponent, ReviewsComponent, NewReviewComponent],
+  imports: [RouterOutlet, HeaderComponent, BannerComponent, SectionTitleComponent, InfoCardComponent, MenuCardComponent, InteractiveCardComponent, OrdersComponent, ReviewsComponent, NewReviewComponent, FooterComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
