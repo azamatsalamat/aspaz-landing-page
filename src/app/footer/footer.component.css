@@ -1,0 +1,19 @@
+:host{
+    display: block;
+    width: 100%;
+    background-color: black;
+    color: white;
+}
+
+footer {
+    padding: 50px 0;
+    margin: 0 auto;
+}
+
+img{
+    width: 1.8rem;
+}
+
+a:first-of-type{
+    margin-right: 10px;
+}
